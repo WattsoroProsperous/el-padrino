@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(dir \"c:\\Users\\KARTA\\Desktop\\dev site\\el-padrino\\public\" /b)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
