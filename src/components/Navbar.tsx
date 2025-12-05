@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link href="#accueil" className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-lg border-2 border-[#c9a962] overflow-hidden flex items-center justify-center relative bg-[#0d100d]/50">
                 <img
-                  src="/images/logo.jpg"
+                  src={`${process.env.NODE_ENV === 'production' ? '/el-padrino' : ''}/images/logo.jpg`}
                   alt="El Padrino Logo"
                   className="w-full h-full object-cover"
                   onError={(e) => {

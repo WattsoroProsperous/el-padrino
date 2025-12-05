@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         {/* Image de fond */}
         <img
-          src="/images/hero-bg.jpg"
+          src={`${process.env.NODE_ENV === 'production' ? '/el-padrino' : ''}/images/hero-bg.jpg`}
           alt="El Padrino Restaurant"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="inline-block mb-6">
             <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-2xl border-2 border-[#c9a962] overflow-hidden flex items-center justify-center relative bg-[#0d100d]/50 backdrop-blur-sm">
               <img
-                src="/images/logo.jpg"
+                src={`${process.env.NODE_ENV === 'production' ? '/el-padrino' : ''}/images/logo.jpg`}
                 alt="El Padrino Logo"
                 className="w-full h-full object-cover"
                 onError={(e) => {

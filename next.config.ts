@@ -6,9 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Décommentez et modifiez si votre repo n'est pas à la racine
-  // basePath: "/nom-du-repo",
-  // assetPrefix: "/nom-du-repo/",
+  basePath: "/el-padrino",
+  assetPrefix: "/el-padrino/",
 };
 
 export default nextConfig;
